@@ -1,4 +1,4 @@
-<?php namespace Castiron\Extbaseinstantiable\Traits;
+<?php namespace Castiron\ExtbaseInstantiable\Traits;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
