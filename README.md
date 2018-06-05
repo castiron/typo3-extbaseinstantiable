@@ -1,5 +1,7 @@
 # Extbaseinstantiable mixin for TYPO3
-Add this mixin to any class to make it instantiable using the Extbase `ObjectManager` with ease.
+This package gives you a mixin (read: trait) that let’s you give the power of self-instantiation (using TYPO3
+conventional mechanisms) to your class itself. Add this mixin to any class to make it instantiable using the Extbase
+`ObjectManager` with ease.
 
 ## Interface
 Once you've mixed the trait into your class, you can call `MyClass::get()` to get an instance of the class.
@@ -33,7 +35,11 @@ MyClass::get()->execute();
 A couple of reasons why this is handy:
 - It makes instantiating your class in TYPO3-world easy-peasy (vs `GeneralUtility::makeInstance` or `ObjectManager::get` called directly)
 - It uses `ObjectManager::get` under the hood, so automatic dependency injection works if you use annotations like `@inject`
-- It will also respect marker interfaces like `SingletonInterface`
+
+## FAQ
+
+Q: Will it also respect marker interfaces like `SingletonInterface`?
+A: Yes! It's using normal TYPO3 object instantiation under the hood, so all that weirdo magic will work.
 
 ## Installation
 ```
