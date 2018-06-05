@@ -1,6 +1,6 @@
 # Extbaseinstantiable mixin for TYPO3
-This package gives you a mixin (read: trait) that let’s you give the power of self-instantiation (using TYPO3
-conventional mechanisms) to your class itself. Add this mixin to any class to make it instantiable using the Extbase
+This package provides a mixin (read: trait) that lets you bestow the power of self-instantiation (using TYPO3
+conventional mechanisms) to your classes. Add this mixin to any class to make it instantiable using the Extbase
 `ObjectManager` with ease.
 
 ## Interface
@@ -38,8 +38,8 @@ A couple of reasons why this is handy:
 
 ## FAQ
 
-Q: Will it also respect marker interfaces like `SingletonInterface`?
-A: Yes! It's using normal TYPO3 object instantiation under the hood, so all that weirdo magic will work.
+#### Will it also respect marker interfaces like `SingletonInterface`?
+Yes! It's using normal TYPO3 object instantiation under the hood, so all that weirdo magic will work.
 
 ## Installation
 ```
